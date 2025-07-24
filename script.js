@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const colorBox = document.getElementById("color-box");
   const changeColorBtn = document.getElementById("change-color-btn");
-
-  // Generate a random hex color
   function getRandomColor() {
     const letters = "0123456789ABCDEF";
     let color = "#";
@@ -10,11 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-  }
-
-  // Change the background color of the box
-  changeColorBtn.addEventListener("click", () => {
+  }changeColorBtn.addEventListener("click", () => {
     const randomColor = getRandomColor();
     colorBox.style.backgroundColor = randomColor;
   });
 });
+// "DOMContentLoaded", document.addEventListener() =>  { const colorBox = document.getElementById("color-box"); const changeColorBtn = document.getElementById("change-color-btn"); function getRandomColor()  { let color = "#"; for (let i = 0; i < 6; i++); const letters = "0123456789ABCDEF"  Letters[Math.floor(Math.random() * 16)] += color Returning color; ~changeColorBtn.addEventListener("click", () =>  { const randomColor = getRandomColor(); colorBox.style.backgroundColor = randomColor; }); });
